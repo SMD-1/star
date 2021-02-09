@@ -28,7 +28,8 @@ section .star{
     width: 100%;
     height: 100%;
     pointer-events: none;
-    animation: animate 8s ease-in-out infinite;
+    animation: animate 8s ease-in-out infinite,
+                backgroundmove 16s linear infinite;
 }
 section .star.star1 {
     animation-delay: 0s;
@@ -68,6 +69,15 @@ section .star.star8 {
     }
     10%, 30%, 50%, 70%, 90% {
         opacity: 1;
+    }
+}
+
+@keyframes backgroundmove {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
     }
 }
 
